@@ -1,0 +1,53 @@
+body {
+    padding:20px;
+    max-width: 426px;
+    border: 1px solid gray;
+    margin: 20px;
+}
+h3 {
+    margin: 0 0 18px 0;
+}
+#password-hint::before{
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: transparent #bababa transparent transparent;
+    border-image: none;
+    border-style: solid;
+    border-width: 10px;
+    content: "";
+    left: -21px;
+    position: absolute;
+    top: 19px;
+    z-index: 1;
+}
+#password-hint {
+    background-clip: padding-box;
+    background-color: #fafafa;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    bottom: 101px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    display: none;
+    max-width: 276px;
+    padding: 6px;
+    text-align: left;
+    white-space: normal;
+    z-index: 1061;
+    /*display: block;*/
+    color: black;
+    position: absolute;
+    top: 415px;
+    left: 420px;
+    height: 56px;
+}
+
+form {
+    padding:20px;
+}
+
+.txtdefault {
+    width: 100%;
+    height: 50px;
+}

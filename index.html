@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CSS tooltip for non bootstrap sites</title>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <!-- <script type="text/javascript" src="scripts.js"></script> -->
+</head>
+<body>
+    <h3>CSS tooltip for non bootstrap sites</h3>
+    <p>Tab through the form until you get to the password field or click directly in the password field.</p>
+    <form>
+        <div class="round-box-row" style="margin-bottom: 2px;">
+            <div id="label-password" class="round-box-label">
+                First name
+            </div>
+            <div class="round-box-input">
+                <input type="text" class="txtdefault />
+            </div>
+        </div><div class="round-box-row" style="margin-bottom: 2px;">
+            <div id="label-password" class="round-box-label">
+                Last name
+            </div>
+            <div class="round-box-input">
+                <input type="text" class="txtdefault />
+            </div>
+        </div><div class="round-box-row" style="margin-bottom: 2px;">
+            <div id="label-password" class="round-box-label">
+                Email
+            </div>
+            <div class="round-box-input">
+                <input type="text" class="txtdefault />
+            </div>
+        </div>
+        <div class="round-box-row" style="margin-bottom: 2px;">
+            <div id="label-password" class="round-box-label">
+                Password
+            </div>
+            <div class="round-box-input">
+                <input type="password" name="password"  id="password" class="txtdefault required" maxlength="12" onfocus="$('#password-hint').css('display','block');$('#password-hint-arrow').css('display','block');$('#viola').css('display','block');" onblur="$('#password-hint').css('display','none');$('#password-hint-arrow').css('display','none');"$('#viola').css('display','none');/>
+                <div id="password-hint">Must be at least: 7 characters; 1 upper case; 1 lower case; and 1 number.</div>
+            </div>
+        </div>  
+    </form>
+    <p id="viola" style="display:none; margin-top:42px;">and viola, no more cluttering tooltips out there :)</p>
+</body>
+</html>
